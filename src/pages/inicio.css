@@ -1,0 +1,160 @@
+/* Estilo base */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.inicio {
+  position: relative;
+  min-height: 100vh;
+  background-color: #d9d9d9;
+  overflow-x: hidden;
+}
+
+/* Imagen de fondo */
+.fondo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+ 
+}
+
+/* Contenido general */
+.contenido-principal {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+
+/* Imagen central */
+.imagen-central-container {
+  margin-bottom: -10px;
+}
+.imagen-central {
+  width: 500px;
+  border-radius: 30px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Caja de búsqueda */
+.contenido-home {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 150px;
+}
+
+.busqueda-card {
+  background: white;
+  border: 3px solid #e43131;
+  border-radius: 10px;
+  padding: 20px;
+  width: 700px;
+  max-width: 90%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  position: relative;
+  z-index: 3;
+}
+
+/* Puntero en la parte inferior */
+.busqueda-card::after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 15px solid #e43131;
+}
+
+/* Botones ARRIENDO / COMPRA */
+.botones-superiores {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.botones-superiores button {
+  padding: 10px 16px;
+  border-radius: 5px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 14px;
+  background-color: #e6e6e6;
+}
+.botones-superiores button.active {
+  background-color: #f0c040;
+  color: black;
+}
+
+/* Campos select */
+.campos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+.campos select,
+.campos input {
+  padding: 10px;
+  border: 2px solid #e43131;
+  border-radius: 5px;
+  min-width: 160px;
+  font-size: 14px;
+  background-color: white;
+  font-weight: 500;
+}
+
+/* Botón FILTROS */
+.btn-filtros {
+  padding: 10px 14px;
+  background-color: #f0c040;
+  color: black;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btn-filtros:hover {
+  background-color: #333;
+  color: white;
+}
+
+/* Botón BUSCAR */
+.acciones {
+  display: flex;
+  justify-content: center;
+}
+.btn.buscar {
+  padding: 10px 20px;
+  background-color: #74d36c;
+  color: #ca1d1d;
+  font-weight: bold;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 2px solid #e6c6c6;
+  cursor: pointer;
+}
+.btn.buscar:hover {
+  background-color: #333;
+  color: white;
+}
+
+/* Filtros Avanzados */
+.filtros-avanzados-wrapper {
+  margin-top: 20px;
+  width: 100%;
+}

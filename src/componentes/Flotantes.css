@@ -1,0 +1,82 @@
+/* Flotantes.css */
+
+.flotantes-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.whatsapp-btn img,
+.campana-btn {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.whatsapp-btn img:hover,
+.campana-btn:hover {
+  transform: scale(1.1);
+}
+
+.campana-container {
+  position: relative;
+}
+
+/* POPUP de notificaciones */
+.popup-notificaciones {
+  position: absolute;
+  right: 60px;
+  bottom: 0;
+  width: 320px;
+  max-height: 400px;
+  padding: 20px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  overflow-y: auto;
+  z-index: 999;
+}
+
+/* Encabezado opcional */
+.titulo-popup {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 8px;
+}
+
+/* Notificaciones individuales */
+.notificacion-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+}
+
+.notificacion-item:last-child {
+  border-bottom: none;
+}
+
+.icono {
+  font-size: 18px;
+  color: #f0c040;
+}
+
+.texto {
+  flex: 1;
+  color: #444;
+  line-height: 1.4;
+  font-weight: bold;
+}
+
