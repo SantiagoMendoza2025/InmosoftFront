@@ -12,6 +12,8 @@ import Register from './componentes/register.jsx';
 import Recover from './componentes/Recover';
 import VerifyCode from './componentes/VerifyCode';
 import ResetPassword from './componentes/ResetPassword';
+import DetalleApartamento from './pages/DetalleApartamento';
+
 
 function App() {
   return (
@@ -23,7 +25,7 @@ function App() {
 
 function AppLayout() {
   const location = useLocation();
-  const isLoginPage = location.pathname === '/login';
+  const isLoginPage = location.pathname === '/login'; 
   const [showTopButton, setShowTopButton] = useState(false);
 
   useEffect(() => {
@@ -52,6 +54,7 @@ function AppLayout() {
           <Route path="/recover" element={<Recover />} />
           <Route path="/verify-code" element={<VerifyCode />} />
           <Route path="/reset-password" element={<ResetPassword />} />
+          <Route path="/detalle" element={<DetalleApartamento />} />
         </Routes>
       </main>
 
