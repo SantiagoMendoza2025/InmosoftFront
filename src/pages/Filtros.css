@@ -5,7 +5,7 @@
   flex-wrap: wrap;
   gap: 15px;
   justify-content: center;
-  border-top: 1px solid #ccc;
+  border-top: 1px solid #74B9E7;
   padding-top: 15px;
 }
 
@@ -25,7 +25,7 @@
 .grupo-avanzado select {
   padding: 8px;
   border-radius: 5px;
-  border: 2px solid #e43131;
+  border: 2px solid #74B9E7;
   font-size: 14px;
 }
 
