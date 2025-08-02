@@ -60,7 +60,7 @@ function AppLayout() {
 
       {showTopButton && (
         <button className="scroll-to-top" onClick={scrollToTop}>
-          🔝
+          🔺
         </button>
       )}
     </div>

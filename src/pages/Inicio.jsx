@@ -2,13 +2,14 @@ import React, { useState } from 'react';
 import './Inicio.css';
 import hero from '../assets/hero.jpg';
 import imagen from '../assets/imagen.png';
-import FiltrosAvanzados from '../componentes/FiltrosAvanzados'; // Asegúrate que la ruta sea correcta
+import FiltrosAvanzados from '../componentes/FiltrosAvanzados';
+import TarjetaPropiedad from '../componentes/TarjetaPropiedad';
+import Flotantes from '../componentes/Flotantes';
 
 function Inicio() {
-  // Estado para mostrar u ocultar los filtros avanzados
   const [mostrarFiltros, setMostrarFiltros] = useState(false);
+  const [opcionSeleccionada, setOpcionSeleccionada] = useState('arriendo');
 
-  // Función que alterna la visibilidad del menú avanzado
   const toggleFiltros = () => {
     setMostrarFiltros(prev => !prev);
   };
@@ -26,17 +27,24 @@ function Inicio() {
         {/* Contenido principal: tarjeta de búsqueda */}
         <div className="contenido-home">
           <div className="busqueda-card">
-
-            {/* Botones de ARRIENDO / COMPRA */}
+            {/* Botones ARRIENDO / COMPRA */}
             <div className="botones-superiores">
-              <button className="active">ARRIENDO</button>
-              <button>COMPRA</button>
+              <button
+                className={`boton-toggle ${opcionSeleccionada === 'arriendo' ? 'activo' : ''}`}
+                onClick={() => setOpcionSeleccionada('arriendo')}
+              >
+                ARRIENDO
+              </button>
+              <button
+                className={`boton-toggle ${opcionSeleccionada === 'compra' ? 'activo' : ''}`}
+                onClick={() => setOpcionSeleccionada('compra')}
+              >
+                COMPRA
+              </button>
             </div>
 
             {/* Filtros básicos */}
-            {/* Filtros básicos */}
             <div className="campos">
-              {/* CIUDAD */}
               <select>
                 <option value="">Selecciona ciudad</option>
                 <option value="Medellín">Medellín</option>
@@ -45,7 +53,6 @@ function Inicio() {
                 <option value="Barranquilla">Barranquilla</option>
               </select>
 
-              {/* CÓDIGO */}
               <select>
                 <option value="">Selecciona código</option>
                 <option value="12345">12345</option>
@@ -53,7 +60,6 @@ function Inicio() {
                 <option value="56325">56325</option>
               </select>
 
-              {/* TIPO DE INMUEBLE */}
               <select>
                 <option value="">Tipo de inmueble</option>
                 <option value="Apartamento">Apartamento</option>
@@ -62,12 +68,10 @@ function Inicio() {
                 <option value="Lote">Lote</option>
               </select>
 
-              {/* Botón FILTROS */}
               <button className="btn-filtros" onClick={toggleFiltros}>
                 FILTROS
               </button>
             </div>
-
 
             {/* Filtros Avanzados (condicional) */}
             {mostrarFiltros && (
@@ -77,8 +81,13 @@ function Inicio() {
             )}
           </div>
         </div>
+
+        {/* Sección de propiedades destacadas (todo viene desde el componente) */}
+        <TarjetaPropiedad />
       </div>
+      <Flotantes />  {/* <-- Agrégalo aquí */}
     </div>
+    
   );
 }
 

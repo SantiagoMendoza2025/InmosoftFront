@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import './Flotantes.css';
-
-import whatsappIcon from '../assets/whatsapp.png';
-import campanaIcon from '../assets/campana.png';
+import { FaWhatsapp, FaBell } from 'react-icons/fa';
 
 const Flotantes = () => {
   const [verNotificaciones, setVerNotificaciones] = useState(false);
@@ -17,24 +15,26 @@ const Flotantes = () => {
 
   return (
     <div className="flotantes-container">
-      {/* WhatsApp */}
+      {/* Botón WhatsApp */}
       <a
         href="https://wa.me/573001234567"
         target="_blank"
         rel="noopener noreferrer"
-        className="whatsapp-btn"
+        className="flotante-btn whatsapp"
+        title="Chatea por WhatsApp"
       >
-        <img src={whatsappIcon} alt="WhatsApp" />
+        <FaWhatsapp size={24} />
       </a>
 
-      {/* Campana */}
+      {/* Botón Notificaciones */}
       <div className="campana-container">
-        <img
-          src={campanaIcon}
-          alt="Campana"
-          className="campana-btn"
+        <button
+          className="flotante-btn campana"
           onClick={() => setVerNotificaciones(!verNotificaciones)}
-        />
+          title="Ver notificaciones"
+        >
+          <FaBell size={22} />
+        </button>
 
         {verNotificaciones && (
           <div className="popup-notificaciones">
@@ -53,4 +53,3 @@ const Flotantes = () => {
 };
 
 export default Flotantes;
-
