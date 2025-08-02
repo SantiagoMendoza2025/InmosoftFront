@@ -158,3 +158,39 @@ body {
   margin-top: 20px;
   width: 100%;
 }
+
+
+.boton-toggle {
+  padding: 8px 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  background-color: #e0e0e0;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.boton-toggle.activo {
+  background-color: #f2c744; /* Amarillo dorado */
+  color: #000;
+}
+.destacadas-del-mes {
+  margin-top: 60px;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.destacadas-del-mes h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.grid-tarjetas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  justify-items: center;
+  padding: 0 20px;
+}
