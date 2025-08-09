@@ -40,7 +40,7 @@
 
 /* Botón para enviar */
 .recover-button {
-  background-color: #FFD700;         /* Amarillo */
+  background-color: #74B9E7;         /* Amarillo */
   color: #000;                       /* Texto negro */
   padding: 12px;
   font-weight: bold;
@@ -54,7 +54,7 @@
 
 /* Botón al pasar el cursor */
 .recover-button:hover {
-  background-color: #FFC300;         /* Amarillo más fuerte */
+  background-color: #74B9E7;         /* Amarillo más fuerte */
 }
 
 /* Enlace para volver al login */

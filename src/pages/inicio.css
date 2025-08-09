@@ -55,7 +55,7 @@ body {
 
 .busqueda-card {
   background: white;
-  border: 3px solid #e43131;
+  border: 3px solid #74B9E7;
   border-radius: 10px;
   padding: 20px;
   width: 700px;
@@ -74,7 +74,7 @@ body {
   transform: translateX(-50%);
   border-left: 15px solid transparent;
   border-right: 15px solid transparent;
-  border-top: 15px solid #e43131;
+  border-top: 15px solid #74B9E7;
 }
 
 /* Botones ARRIENDO / COMPRA */
@@ -95,7 +95,7 @@ body {
   background-color: #e6e6e6;
 }
 .botones-superiores button.active {
-  background-color: #f0c040;
+  background-color: #74B9E7;
   color: black;
 }
 
@@ -110,7 +110,7 @@ body {
 .campos select,
 .campos input {
   padding: 10px;
-  border: 2px solid #e43131;
+  border: 2px solid #74B9E7;
   border-radius: 5px;
   min-width: 160px;
   font-size: 14px;
@@ -121,7 +121,7 @@ body {
 /* Botón FILTROS */
 .btn-filtros {
   padding: 10px 14px;
-  background-color: #f0c040;
+  background-color: #74B9E7;
   color: black;
   font-weight: bold;
   border: none;
@@ -141,7 +141,7 @@ body {
 .btn.buscar {
   padding: 10px 20px;
   background-color: #74d36c;
-  color: #ca1d1d;
+  color: #74B9E7;
   font-weight: bold;
   font-size: 14px;
   border-radius: 5px;
@@ -172,7 +172,7 @@ body {
 }
 
 .boton-toggle.activo {
-  background-color: #f2c744; /* Amarillo dorado */
+  background-color: #74B9E7; /* Amarillo dorado */
   color: #000;
 }
 .destacadas-del-mes {
