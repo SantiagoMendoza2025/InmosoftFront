@@ -66,8 +66,8 @@ body {
 }
 
 .role-buttons .active {
-  background-color: #f4c200;
-  border-color: #f4c200;
+  background-color: #74B9E7;
+  border-color: #74B9E7;
   color: black;
 }
 
@@ -98,7 +98,7 @@ body {
 
 /* Botón de registro */
 .register-button {
-  background-color: #f7d325;
+  background-color: #74B9E7;
   color: #000;
   font-weight: bold;
   font-size: 16px;
@@ -110,5 +110,5 @@ body {
 }
 
 .register-button:hover {
-  background-color: #eac418;
+  background-color: #74B9E7;
 }

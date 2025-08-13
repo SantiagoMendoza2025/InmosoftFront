@@ -46,3 +46,10 @@
   font-size: 18px;
   color: #1d3557; /* azul oscuro elegante */
 }
+
+.center-box {
+  display: flex;
+  justify-content: center; /* centra horizontalmente */
+  align-items: center;     /* centra verticalmente */
+  height: 200px;           /* altura del contenedor */
+}

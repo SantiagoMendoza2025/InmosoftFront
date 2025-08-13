@@ -5,6 +5,7 @@ import { Link,useNavigate} from 'react-router-dom';
 
 
 
+
 function Login() { // Declara el componente
   const navigate = useNavigate(); // que permite redireccionar al usuario a otra ruta
 

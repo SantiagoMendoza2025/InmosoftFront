@@ -20,7 +20,7 @@ function Navbar() {
         <ul className="nav-links">
           <li><Link to="/preguntas">Preguntas Frecuentes</Link></li>
           <li><Link to="/proyectos">Proyectos</Link></li>
-          <li><Link to="/nosotros">Nosotros</Link></li>
+          <li><Link to="/quienes-somos">¿Quiénes Somos?</Link></li>
         </ul>
       </div>
 

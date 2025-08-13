@@ -10,20 +10,19 @@ body {
   min-height: 100vh;
   background-color: #d9d9d9;
   overflow-x: hidden;
+
 }
 
-/* Imagen de fondo */
 .fondo {
-  position: absolute;
-  top: 0;
-  left: 0;
+ 
+  background-color: #d9d9d9;
+
   height: 100%;
   width: 100%;
-  background-size: cover;
-  background-position: center;
-  z-index: 1;
- 
+  
 }
+
+
 
 /* Contenido general */
 .contenido-principal {
@@ -172,7 +171,7 @@ body {
 }
 
 .boton-toggle.activo {
-  background-color: #f2c744; /* Amarillo dorado */
+  background-color: #74B9E7; /* Amarillo dorado */
   color: #000;
 }
 .destacadas-del-mes {

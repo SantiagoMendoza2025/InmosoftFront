@@ -116,7 +116,10 @@ function TarjetaPropiedad() {
 
   return (
     <div className="tarjetas-destacadas">
+      <div class="center-box">
       <h2>DESTACADAS DEL MES</h2>
+      </div>
+
       <div className="grid-tarjetas">
         {propiedades.map((prop) => (
           <div key={prop.id} className="tarjeta-propiedad">

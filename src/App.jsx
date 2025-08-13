@@ -13,6 +13,7 @@ import Recover from './componentes/Recover';
 import VerifyCode from './componentes/VerifyCode';
 import ResetPassword from './componentes/ResetPassword';
 import DetalleApartamento from './pages/DetalleApartamento';
+import QuienesSomos from "./pages/QuienesSomos";
 
 
 function App() {
@@ -55,6 +56,7 @@ function AppLayout() {
           <Route path="/verify-code" element={<VerifyCode />} />
           <Route path="/reset-password" element={<ResetPassword />} />
           <Route path="/detalle" element={<DetalleApartamento />} />
+          <Route path="/quienes-somos" element={<QuienesSomos />} />
         </Routes>
       </main>
 
